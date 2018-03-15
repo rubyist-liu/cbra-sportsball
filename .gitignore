@@ -21,4 +21,23 @@
 /yarn-error.log
 
 .byebug_history
-/vendor/bundle
+
+# Ignore App
+/app/db/*.sqlite3
+/app/db/*.sqlite3-journal
+
+/app/log/*
+/app/tmp/*
+!/app/log/.keep
+!/app/tmp/.keep
+
+/app/node_modules
+/app/yarn-error.log
+
+/app/.byebug_history
+
+# Ignore Component
+/components/*/spec/dummy/log/*
+!/components/*/spec/dummy/log/.keep
+/components/*/spec/dummy/tmp/*
+!/components/*/spec/dummy/tmp/.keep
