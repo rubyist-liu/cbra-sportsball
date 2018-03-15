@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20180314102623) do
 
-  create_table "app_component_games", force: :cascade do |t|
+  create_table "app_component_games", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "date"
     t.string "location"
     t.integer "first_team_id"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20180314102623) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "app_component_teams", force: :cascade do |t|
+  create_table "app_component_teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
